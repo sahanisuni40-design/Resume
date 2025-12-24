@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Sunil Sahani | Cover Letter</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background: #f4f4f4;
+    color: #000;
+  }
+
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+
+  .container {
+    max-width: 850px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+  }
+
+  /* PRINT BUTTON */
+  .print-btn {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .print-btn button {
+    padding: 10px 18px;
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* HEADER */
+  .header {
+    margin-bottom: 25px;
+  }
+
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .contact {
+    font-size: 13px;
+    margin-top: 6px;
+    line-height: 1.5;
+  }
+
+  /* CONTENT */
+  p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  .editable {
+    outline: none;
+  }
+
+  .editable:hover {
+    background: #f7f7f7;
+  }
+
+  .date {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .subject {
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .closing {
+    margin-top: 25px;
+  }
+
+  /* PRINT MODE */
+  @media print {
+    body {
+      background: #fff;
+    }
+    .print-btn {
+      display: none;
+    }
+    .container {
+      padding: 0;
+    }
+    .editable:hover {
+      background: transparent;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- PRINT BUTTON -->
+<div class="print-btn">
+  <button onclick="window.print()">Download / Print PDF</button>
+</div>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name editable" contenteditable="true">SUNIL SAHANI</div>
+    <div class="contact editable" contenteditable="true">
+      Adajan, Surat – 395009<br>
+      Phone: +91-965839080<br>
+      Email: sunilsahani484@gmail.com<br>
+    </div>
+  </div>
+
+  <!-- DATE -->
+  <div class="date editable" contenteditable="true">
+    Date: 24 December 2025
+  </div>
+
+  <!-- TO -->
+  <p class="editable" contenteditable="true">
+    Hiring Manager<br>
+    Company Name<br>
+    Location
+  </p>
+
+  <!-- SUBJECT -->
+  <div class="subject editable" contenteditable="true">
+    Subject: Application for Full Stack Developer Position
+  </div>
+
+  <!-- BODY -->
+  <p class="editable" contenteditable="true">
+    Dear Hiring Manager,
+  </p>
+
+  <p class="editable" contenteditable="true">
+    I am writing to express my interest in the Full Stack Developer position at
+    your organization. I have hands-on experience in developing scalable web
+    applications using .NET Core, C#, ASP.NET MVC, SQL Server, and modern
+    front-end technologies such as HTML, CSS, JavaScript, and React.js.
+  </p>
+
+  <p class="editable" contenteditable="true">
+    Currently, I am working as a Full Stack Developer where I design, develop,
+    and maintain enterprise-level applications. I have experience in building
+    REST APIs, implementing clean architecture, optimizing performance, and
+    customizing NopCommerce platforms including plugin and theme development.
+  </p>
+
+  <p class="editable" contenteditable="true">
+    I am highly motivated, detail-oriented, and passionate about learning new
+    technologies. I believe my technical skills, problem-solving ability, and
+    commitment to quality make me a strong candidate for this role.
+  </p>
+
+  <p class="editable" contenteditable="true">
+    I would welcome the opportunity to discuss how my skills and experience can
+    contribute to your team. Thank you for considering my application.
+  </p>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <p class="editable" contenteditable="true">
+      Sincerely,<br><br>
+      <strong>Sunil Sahani</strong>
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>
