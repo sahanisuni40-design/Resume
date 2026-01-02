@@ -101,21 +101,79 @@
     margin-bottom: 10px;
   }
 
-  @media print {
-    body {
-      background: #fff;
-    }
-    .resume {
-      padding: 0;
-    }
-    .hint,
-    .print-mobile {
-      display: none;
-    }
-    .editable:hover {
-      background: transparent;
-    }
+@media print {
+
+  @page {
+    size: A4;
+    margin: 10mm;
   }
+
+  html {
+    zoom: 1.0; /* 🔥 force fit to one page */
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .resume {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  /* Tight typography */
+  .name {
+    font-size: 23px;
+  }
+
+  .role {
+    font-size: 13px;
+  }
+
+  .contact {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  p, li {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  /* Reduce spacing */
+  .section {
+    margin-top: 12px;
+  }
+
+  ul {
+    margin-top: 4px;
+  }
+
+  li {
+    margin-bottom: 2px;
+  }
+
+  .section-title {
+    margin-bottom: 6px;
+    padding-bottom: 3px;
+  }
+
+  /* ABSOLUTELY prevent page breaks */
+  .section,
+  .job,
+  ul,
+  li {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Hide UI elements */
+  .hint,
+  .print-mobile {
+    display: none !important;
+  }
+}
+
 
   .print-mobile {
     text-align: center;
